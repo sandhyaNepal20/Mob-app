@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         title: Text(
-          'Sydney, Australia',
+          'Kathmandu, Nepal',
           style: TextStyle(
             fontSize: 16,
             color: Colors.grey[700],
