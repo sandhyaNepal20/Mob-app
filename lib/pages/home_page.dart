@@ -71,7 +71,8 @@ class _HomePageState extends State<HomePage> {
           // good morning bro
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 24.0),
-            child: Text('Good morning,'),
+            child: Text('Hurry Up,'),
+
           ),
 
           const SizedBox(height: 4),
@@ -80,9 +81,9 @@ class _HomePageState extends State<HomePage> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24.0),
             child: Text(
-              "Let's order fresh items for you",
+              "Our top-rated fresh produce is in high demand – secure yours before it's gone!",
               style: GoogleFonts.notoSerif(
-                fontSize: 36,
+                fontSize: 25,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -101,7 +102,7 @@ class _HomePageState extends State<HomePage> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24.0),
             child: Text(
-              "Fresh Items",
+              "Selling items are here",
               style: GoogleFonts.notoSerif(
                 //fontWeight: FontWeight.bold,
                 fontSize: 18,

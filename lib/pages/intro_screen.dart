@@ -62,12 +62,12 @@ class IntroScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(24),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(16),
-                  color: const Color.fromARGB(255, 112, 91, 222),
+                  color: Color.fromARGB(255, 112, 183, 241),
                 ),
                 child: const Text(
                   "Get Started",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                     // fontWeight: FontWeight.bold,
                     fontSize: 16,
                   ),
