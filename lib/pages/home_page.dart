@@ -6,7 +6,7 @@ import '../model/cart_model.dart';
 import 'cart_page.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  const HomePage({Key? key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -26,12 +26,25 @@ class _HomePageState extends State<HomePage> {
             color: Colors.grey[700],
           ),
         ),
-        title: Text(
-          'Kathmandu, Nepal',
-          style: TextStyle(
-            fontSize: 16,
-            color: Colors.grey[700],
-          ),
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "Sandhya's Grocery Shop", // Updated title here
+              style: TextStyle(
+                fontSize: 20, // Adjust the font size as needed
+                fontWeight: FontWeight.bold,
+                color: Colors.grey[700],
+              ),
+            ),
+            Text(
+              "Kathmandu, Nepal",
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.grey[700],
+              ),
+            ),
+          ],
         ),
         centerTitle: false,
         actions: [
@@ -72,7 +85,6 @@ class _HomePageState extends State<HomePage> {
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 24.0),
             child: Text('Hurry Up,'),
-
           ),
 
           const SizedBox(height: 4),
@@ -81,7 +93,7 @@ class _HomePageState extends State<HomePage> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24.0),
             child: Text(
-              "Our top-rated fresh produce is in high demand – secure yours before it's gone!",
+              "You can order from here ",
               style: GoogleFonts.notoSerif(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
