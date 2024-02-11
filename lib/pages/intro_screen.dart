@@ -3,12 +3,23 @@ import 'package:google_fonts/google_fonts.dart';
 import 'home_page.dart';
 
 class IntroScreen extends StatelessWidget {
-  const IntroScreen({super.key});
+  const IntroScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[50],
+      appBar: AppBar(
+        title: Text(
+          "Sandhya's Grocery Store",
+          style: GoogleFonts.notoSerif(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.grey[50],
+        elevation: 0, // Remove the shadow
+      ),
       body: SafeArea(
         child: Column(
           children: [
@@ -17,7 +28,7 @@ class IntroScreen extends StatelessWidget {
               padding: const EdgeInsets.only(
                 left: 100.0,
                 right: 100.0,
-                top: 120,
+                top: 40, // Adjusted top padding
                 bottom: 20,
               ),
               child: Image.asset('lib/images/grocery.png'),
@@ -30,11 +41,13 @@ class IntroScreen extends StatelessWidget {
                 'We deliver groceries at your doorstep',
                 textAlign: TextAlign.center,
                 style: GoogleFonts.notoSerif(
-                    fontSize: 36, fontWeight: FontWeight.bold),
+                  fontSize: 36,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
 
-            // groceree gives you fresh vegetables and fruits
+            // grocery gives you fresh vegetables and fruits
             Text(
               'Fresh items everyday',
               textAlign: TextAlign.center,
